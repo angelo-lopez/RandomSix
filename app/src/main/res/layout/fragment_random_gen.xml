@@ -1,0 +1,355 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_random_gen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.angelsoft.angelo_romel.randomsix.RandomGenActivityFragment"
+    tools:showIn="@layout/activity_random_gen">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Min:, Max:, No-Repeat"
+        android:padding="5dp"
+        android:id="@+id/status_textview"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            >
+            <!--1st card/////////////////////////////////////////////////////////////-->
+            <FrameLayout
+                android:id="@+id/one"
+                android:layout_width="@dimen/card_dimension"
+                android:layout_height="@dimen/card_dimension"
+                android:layout_margin="@dimen/card_margin">
+
+                <FrameLayout
+                    android:id="@+id/back1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/back1_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:tint="#F44336"
+                        android:src="@drawable/rectangle"/>
+
+                    <TextView
+                        android:id="@+id/back1_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="\?"
+                        android:textColor="@color/colorCardText"
+                        style="@style/Base.TextAppearance.AppCompat.Display1"
+                        android:gravity="center"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/front1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/front1_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:tint="#F44336"
+                        android:src="@drawable/rectangle"/>
+
+                    <TextView
+                        android:id="@+id/front1_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="\?"
+                        android:textColor="@color/colorCardText"
+                        style="@style/Base.TextAppearance.AppCompat.Display1"
+                        android:gravity="center"/>
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <!--2nd card/////////////////////////////////////////////////////////////-->
+            <FrameLayout
+                android:id="@+id/two"
+                android:layout_width="@dimen/card_dimension"
+                android:layout_height="@dimen/card_dimension"
+                android:layout_margin="@dimen/card_margin">
+
+                <FrameLayout
+                    android:id="@+id/back2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/back2_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:tint="#AA00FF"
+                        android:src="@drawable/rectangle"/>
+
+                    <TextView
+                        android:id="@+id/back2_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="\?"
+                        android:textColor="@color/colorCardText"
+                        style="@style/Base.TextAppearance.AppCompat.Display1"
+                        android:gravity="center"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/front2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/front2_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:tint="#AA00FF"
+                        android:src="@drawable/rectangle"/>
+
+                    <TextView
+                        android:id="@+id/front2_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="\?"
+                        android:textColor="@color/colorCardText"
+                        style="@style/Base.TextAppearance.AppCompat.Display1"
+                        android:gravity="center"/>
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <!--3rd card/////////////////////////////////////////////////////////////-->
+            <FrameLayout
+                android:id="@+id/three"
+                android:layout_width="@dimen/card_dimension"
+                android:layout_height="@dimen/card_dimension"
+                android:layout_margin="@dimen/card_margin">
+
+                <FrameLayout
+                    android:id="@+id/back3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/back3_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:tint="#00838F"
+                        android:src="@drawable/rectangle"/>
+
+                    <TextView
+                        android:id="@+id/back3_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="\?"
+                        android:textColor="@color/colorCardText"
+                        style="@style/Base.TextAppearance.AppCompat.Display1"
+                        android:gravity="center"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/front3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/front3_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:tint="#00838F"
+                        android:src="@drawable/rectangle"/>
+
+                    <TextView
+                        android:id="@+id/front3_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="\?"
+                        android:textColor="@color/colorCardText"
+                        style="@style/Base.TextAppearance.AppCompat.Display1"
+                        android:gravity="center"/>
+                </FrameLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <!--4th card/////////////////////////////////////////////////////////////-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            >
+
+            <FrameLayout
+                android:id="@+id/four"
+                android:layout_width="@dimen/card_dimension"
+                android:layout_height="@dimen/card_dimension"
+                android:layout_margin="@dimen/card_margin">
+
+                <FrameLayout
+                    android:id="@+id/back4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/back4_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:tint="#FF9800"
+                        android:src="@drawable/rectangle"/>
+
+                    <TextView
+                        android:id="@+id/back4_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="\?"
+                        android:textColor="@color/colorCardText"
+                        style="@style/Base.TextAppearance.AppCompat.Display1"
+                        android:gravity="center"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/front4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/front4_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:tint="#FF9800"
+                        android:src="@drawable/rectangle"/>
+
+                    <TextView
+                        android:id="@+id/front4_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="\?"
+                        android:textColor="@color/colorCardText"
+                        style="@style/Base.TextAppearance.AppCompat.Display1"
+                        android:gravity="center"/>
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <!--5th card/////////////////////////////////////////////////////////////-->
+            <FrameLayout
+                android:id="@+id/five"
+                android:layout_width="@dimen/card_dimension"
+                android:layout_height="@dimen/card_dimension"
+                android:layout_margin="@dimen/card_margin">
+
+                <FrameLayout
+                    android:id="@+id/back5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/back5_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:tint="#607D8B"
+                        android:src="@drawable/rectangle"/>
+
+                    <TextView
+                        android:id="@+id/back5_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="\?"
+                        android:textColor="@color/colorCardText"
+                        style="@style/Base.TextAppearance.AppCompat.Display1"
+                        android:gravity="center"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/front5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/front5_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:tint="#607D8B"
+                        android:src="@drawable/rectangle"/>
+
+                    <TextView
+                        android:id="@+id/front5_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="\?"
+                        android:textColor="@color/colorCardText"
+                        style="@style/Base.TextAppearance.AppCompat.Display1"
+                        android:gravity="center"/>
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <!--6th card/////////////////////////////////////////////////////////////-->
+            <FrameLayout
+                android:id="@+id/six"
+                android:layout_width="@dimen/card_dimension"
+                android:layout_height="@dimen/card_dimension"
+                android:layout_margin="@dimen/card_margin">
+
+                <FrameLayout
+                    android:id="@+id/back6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/back6_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:tint="#00C853"
+                        android:src="@drawable/rectangle"/>
+
+                    <TextView
+                        android:id="@+id/back6_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="\?"
+                        android:textColor="@color/colorCardText"
+                        style="@style/Base.TextAppearance.AppCompat.Display1"
+                        android:gravity="center"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/front6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/front6_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:tint="#00C853"
+                        android:src="@drawable/rectangle"/>
+
+                    <TextView
+                        android:id="@+id/front6_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="\?"
+                        android:textColor="@color/colorCardText"
+                        style="@style/Base.TextAppearance.AppCompat.Display1"
+                        android:gravity="center"/>
+                </FrameLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabRandomize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_refresh" />
+
+</FrameLayout>
